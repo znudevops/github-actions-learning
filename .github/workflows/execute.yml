@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      -name: first command
-       run: echo "Hello World!"
+      - name: first command
+        run: echo "Hello World!"
