@@ -1,0 +1,12 @@
+name: Execute workflow
+
+on: 
+  push:
+  
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    
+    steps:
+      -name: first command
+        run: echo "Hello World!"
