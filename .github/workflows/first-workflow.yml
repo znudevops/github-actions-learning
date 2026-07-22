@@ -1,8 +1,14 @@
-name: My Workflow
+name: My First GitHub Workflow
 
 on:
   push:
 
 jobs:
-  build:
+  hello-world:
+
     runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Print Welcome Message
+        run: echo "Welcome to GitHub Actions"
