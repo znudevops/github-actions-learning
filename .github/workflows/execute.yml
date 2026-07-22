@@ -12,4 +12,9 @@ jobs:
         run: echo "Hello World!"
       - name: print current directory
         run: pwd
-        
+      - name: mutliple commands
+        run: |
+          pwd
+          ls -la
+          date
+          whoami
