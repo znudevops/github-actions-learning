@@ -1,8 +1,8 @@
-name My Workflow
+name: My Workflow
 
-on
-  push
+on:
+  push:
 
-jobs
-  build
-    runs-on ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
