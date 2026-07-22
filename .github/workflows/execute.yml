@@ -10,3 +10,6 @@ jobs:
     steps:
       - name: first command
         run: echo "Hello World!"
+      - name: print current directory
+        run: pwd
+        
