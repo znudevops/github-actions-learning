@@ -1,0 +1,11 @@
+name: pull request
+
+on:
+  pull_request:
+  
+jobs:
+  pull-request-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: trigger on pull request
+        run: echo "hello world!"
