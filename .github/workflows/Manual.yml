@@ -1,0 +1,12 @@
+name: manually tirgger
+
+on: 
+  workflow-dispatch:
+  
+jobs:
+  manual-trigger:
+    runs-on: ubuntu-latest
+      steps:
+      - name: dispay date
+        run: timedatectl
+		
