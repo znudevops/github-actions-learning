@@ -7,6 +7,5 @@ jobs:
   manual-trigger:
     runs-on: ubuntu-latest
     steps:
-      - name: dispay date
-        run: date
-		
+      - name: display date
+        run: echo "date today"      
