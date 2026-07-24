@@ -1,0 +1,30 @@
+name: parallel execution
+
+on: 
+  workflow_dispatch:
+  
+jobs:
+  
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: present working dir
+        run: pwd
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: display date
+        run: timedatectl
+  job3:
+    needs: job2
+    runs-on: ubuntu-latest
+    steps:
+      - name: list files
+        run: ls -la
+  job4:
+    needs: job2
+    runs-on: ubuntu-latest
+    steps:
+      - name: user name
+        run: whoami
